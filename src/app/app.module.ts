@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import {MaterializeModule} from "angular2-materialize";
@@ -12,25 +11,9 @@ import { SocialsIconComponent } from './socials-icon/socials-icon.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import {Animations} from "./app.animations";
+import { AboutComponent } from './about/about.component';
+import {AppRouting} from "./app.routes";
 
-const appRoutes: Routes = [
-  {
-    path: 'accueil',
-    component: HeaderComponent
-  },
-  {
-    path: 'contacts',
-    component: ContactsComponent
-  },
-  { path: '',
-    redirectTo: '/accueil',
-    pathMatch: 'full'
-  },
-  { path: '**', component: HeaderComponent }
-];
-export const AppRouting = RouterModule.forRoot(appRoutes, {
-  useHash: true
-});
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +21,7 @@ export const AppRouting = RouterModule.forRoot(appRoutes, {
     SocialsIconComponent,
     NavComponent,
     ContactsComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
