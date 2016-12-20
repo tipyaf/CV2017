@@ -1,0 +1,31 @@
+:host {
+  min-width: 100%; }
+
+.head {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.45); }
+
+.head-title {
+  text-align: center; }
+
+.head-title h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0; }
+
+.head-title h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin: 0; }
+
+.btn-cv {
+  margin-top: 15px; }
+
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,12 @@
+:host {
+  max-height: 3%; }
+
+.social-icons i {
+  color: #cccccc;
+  transition: all 0.2s; }
+
+.social-icons i:hover {
+  color: #eba025;
+  font-size: 2.5rem; }
+
+/*# sourceMappingURL=socials-icon.component.css.map */

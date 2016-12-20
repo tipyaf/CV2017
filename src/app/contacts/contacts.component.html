@@ -1,0 +1,34 @@
+<div class="contacts-page">
+  <h3 class="header-views">Contacts</h3>
+  <!--<i class="fa fa-hand-o-right fa-5x linkedin" aria-hidden="true"></i>-->
+  
+  <div class="click-me flex-row space-between" *ngIf="!onEnvelope">
+    <!--<img src="assets/img/mail.svg" alt="envelope">-->
+    <p>Pour me contacter, <br> <span class="blue-text">cliquez sur ma photo !</span> </p>
+
+  </div>
+  <div class="left-side card" [@envelopeAnimation]="onEnvelope">
+
+    <h4 class="linkedin">Yannick Benchimol</h4>
+    <div class="contacts-personnals">
+      <div><i class="material-icons">smartphone</i><span>07 60 64 93 53</span></div>
+      <div><i class="material-icons">contact_mail</i><span>ya.net@hotmail.fr</span></div>
+    </div>
+    <div class="social-contacts">
+      <p>
+        retrouvez-moi sur :
+      </p>
+      <div class="social-icons flex-row space-around">
+        <a class="linkedin" href="https://www.linkedin.com/in/yannick-benchimol-4b9a8592" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" target="_blank"></i></a>
+        <a class="twitter" href="https://twitter.com/pitipiaf" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i></a>
+        <a class="github" href="https://github.com/tipyaf" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+        </a>
+  
+  
+      </div>
+    </div>
+  </div>
+  
+</div>
+<img class="my-photo" (click)="onEnvelope = true" src="assets/img/demi-portrait-right.png" alt="portrait_right">
+<p [@fadeIn]="onEnvelope" class="soon">À bientôt !</p>

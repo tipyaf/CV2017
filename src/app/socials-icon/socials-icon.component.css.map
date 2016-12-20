@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK;EACH,UAAU,EAAE,EAAE;;AAEhB,eAAe;EACb,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,QAAQ;;AAEtB,qBAAqB;EACnB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,MAAM",
+"sources": ["socials-icon.component.scss"],
+"names": [],
+"file": "socials-icon.component.css"
+}
