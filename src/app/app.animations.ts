@@ -27,8 +27,8 @@ export class Animations {
     trigger('fadeIn', [
       state('true', style({opacity: 1}) ),
       state('false', style({opacity: 0}) ),
-      transition('1 => 0', animate('2s 4s ease-in')),
-      transition('0 => 1', animate('2s 4s ease-in'))
+      transition('1 => 0', animate('1s ease-in')),
+      transition('0 => 1', animate('2s ease-in'))
     ]),
     trigger('fadeInFast', [
       state('true', style({opacity: 1}) ),

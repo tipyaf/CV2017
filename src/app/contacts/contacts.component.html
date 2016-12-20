@@ -1,11 +1,9 @@
 <div class="contacts-page">
   <h3 class="header-views">Contacts</h3>
   <!--<i class="fa fa-hand-o-right fa-5x linkedin" aria-hidden="true"></i>-->
-  
-  <div class="click-me flex-row space-between" *ngIf="!onEnvelope">
-    <!--<img src="assets/img/mail.svg" alt="envelope">-->
-    <p>Pour me contacter, <br> <span class="blue-text">cliquez sur ma photo !</span> </p>
 
+  <div class="click-me flex-row space-between" *ngIf="!onEnvelope">
+    <img src="assets/img/mail.svg" alt="envelope">
   </div>
   <div class="left-side card" [@envelopeAnimation]="onEnvelope">
 
@@ -23,12 +21,10 @@
         <a class="twitter" href="https://twitter.com/pitipiaf" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i></a>
         <a class="github" href="https://github.com/tipyaf" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
         </a>
-  
-  
       </div>
     </div>
   </div>
-  
+
 </div>
-<img class="my-photo" (click)="onEnvelope = true" src="assets/img/demi-portrait-right.png" alt="portrait_right">
+<img class="my-photo" src="assets/img/demi-portrait-right.png" alt="portrait_right">
 <p [@fadeIn]="onEnvelope" class="soon">À bientôt !</p>

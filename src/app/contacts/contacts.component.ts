@@ -10,11 +10,13 @@ import {Animations} from "../app.animations";
   animations: Animations.page
 })
 export class ContactsComponent implements OnInit {
-  onEnvelope: boolean;
+  onEnvelope: boolean = false;
   constructor() { }
 
   ngOnInit() {
-    this.onEnvelope = false;
+    setTimeout(
+      () => this.onEnvelope = true, 500
+    )
   }
 
 }
