@@ -1,12 +1,12 @@
 <div class="navi">
   
   <ul>
-    <li [routerLink]="['/accueil']">Accueil</li>
-    <!--TODO: add compétences-->
-    <!--<li>Compétences</li> &lt;!&ndash;présentation des technos&ndash;&gt;-->
+    <li [routerLink]="['/accueil']" routerLinkActive="active-link">Accueil</li>
+    <li [routerLink]="['/accueil']" routerLinkActive="active-link">À propos de moi</li>
+    <li>Compétences</li> <!--présentation des technos-->
     <li>Parcours {{onHideIconMenu}}</li>
     <li>Projets</li>
-    <li [routerLink]="['/contacts']">Contact</li>
+    <li [routerLink]="['/contacts']" routerLinkActive="active-link">Contact</li>
   </ul>
   
 </div>

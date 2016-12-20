@@ -1,10 +1,7 @@
 <div class="contacts-page">
   <h3 class="header-views">Contacts</h3>
   <!--<i class="fa fa-hand-o-right fa-5x linkedin" aria-hidden="true"></i>-->
-
-  <div class="click-me flex-row space-between" *ngIf="!onEnvelope">
-    <img src="assets/img/mail.svg" alt="envelope">
-  </div>
+  
   <div class="left-side card" [@envelopeAnimation]="onEnvelope">
 
     <h4 class="linkedin">Yannick Benchimol</h4>
@@ -27,4 +24,4 @@
 
 </div>
 <img class="my-photo" src="assets/img/demi-portrait-right.png" alt="portrait_right">
-<p [@fadeIn]="onEnvelope" class="soon">À bientôt !</p>
+<p [@fadeIn]="onEnvelope" class="soon">À très bientôt !</p>
