@@ -42,6 +42,12 @@ export class Animations {
       transition('1 => 0', animate('2s 3s ease-in-out')),
       transition('0 => 1', animate('2s 3s ease-in-out'))
     ]),
+    trigger('menuAnimation', [
+      state('true', style({transform: 'translateX(0)'}) ),
+      state('false', style({transform: 'translateX(-100%)'}) ),
+      transition('1 => 0', animate('0.6s ease-in-out')),
+      transition('0 => 1', animate('0.6s ease-in-out'))
+    ])
 
   ];
 
