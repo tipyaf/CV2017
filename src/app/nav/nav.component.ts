@@ -17,11 +17,7 @@ export class NavComponent implements OnInit {
     this._data.getData()
       .subscribe(data => {
           this.data = data;
-          console.log(data, 'data header ok')
-        },
-        error => {
-          console.warn(error, 'header data error');
-        });
+        })
   }
   ngOnInit() {
     this.loadData()
