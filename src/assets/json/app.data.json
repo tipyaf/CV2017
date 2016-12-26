@@ -1,0 +1,56 @@
+{
+  "firstName": "Yannick",
+  "name": "Benchimol",
+  "address": "ya.net@hotmail.fr",
+  "social":{
+    "faSize": "fa-2x",
+    "twiter": {
+      "link": "https://twitter.com/pitipiaf",
+      "icon": "fa fa-twitter-square",
+      "color": ""
+    },
+    "linkedin": {
+      "link": "https://www.linkedin.com/in/yannick-benchimol-4b9a8592",
+      "icon": "fa fa-linkedin-square",
+      "color": ""
+    },
+    "github": {
+      "link": "https://www.linkedin.com/in/yannick-benchimol-4b9a8592",
+      "icon": "fa fa-linkedin-square",
+      "color": ""
+    }
+  },
+  "pages": [
+    {
+        "name": "Accueil",
+        "target": "accueil",
+        "content": {}
+
+    },
+    {
+        "name": "À propos de moi",
+        "target": "about",
+        "content": {}
+    },
+    {
+      "name": "Compétences",
+      "target": "skill",
+      "content": {}
+    },
+    {
+      "name": "Parcours",
+      "target": "cv",
+      "content": {}
+    },
+    {
+      "name": "Projets",
+      "target": "projects",
+      "content": {}
+    },
+    {
+      "name": "Contacts",
+      "target": "contacts",
+      "content": {}
+    }
+  ]
+}

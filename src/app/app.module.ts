@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpModule, JsonpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {MaterializeModule} from "angular2-materialize";
@@ -13,6 +13,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import {Animations} from "./app.animations";
 import { AboutComponent } from './about/about.component';
 import {AppRouting} from "./app.routes";
+// import {AppDataService} from "./data.service";
 
 @NgModule({
   declarations: [
@@ -29,9 +30,12 @@ import {AppRouting} from "./app.routes";
     HttpModule,
     MaterializeModule,
     Angular2FontawesomeModule,
+    JsonpModule,
     AppRouting
   ],
-  providers: [Animations],
+  providers: [Animations
+    // , AppDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
