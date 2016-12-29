@@ -1,8 +1,9 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {Animations} from "../app.animations";
-import {AppDataService} from "../data.service";
-import {DataModel, Page} from "../data.model";
-// import {PagesData} from "../pages.data";
+import {DataService} from "../data.service";
+
+import {DataModel} from "../data.model";
+
 
 
 @Component({
@@ -11,31 +12,33 @@ import {DataModel, Page} from "../data.model";
   styleUrls: ['./contacts.component.scss'],
   host: { '[@routeAnimation]': '' },
   animations: Animations.page,
-  providers:[AppDataService]
+  providers:[DataService]
 })
 export class ContactsComponent implements OnInit {
-  // @Input('dbData') data: DataModel;
-  // @Input('dbPage') dataPage: PagesData;
   data: DataModel[] = [];
-  // dataPage: PagesData[] = [];
   onEnvelope: boolean = false;
 
   constructor(
-    private _data: AppDataService,
-    // private _dataPages: PagesData
+    private _data: DataService,
   ) {}
 
 
   getDataPage(page: number){
+    this._data.getDataPage(page)
+      .subscribe(data =>{
+          this.data = data;
+          console.log(data, 'get about data')
+        }
+
+      );
+  }
+
+  getData(){
     this._data.getData()
       .subscribe(data => {
-          this.data = data.pages[page];
-          console.log(this.data, 'data ' + page );
-
-        },
-        error => {
-          console.warn(error, 'page service data error');
-        });
+        this.data = data;
+        console.log(this.data, 'data ');
+      });
 
   }
   ngOnInit() {
@@ -45,9 +48,7 @@ export class ContactsComponent implements OnInit {
     );
 
     this.getDataPage(5);
-      console.log(this.data, 'retour???')
-
-
+    this.getData();
   };
 
 }

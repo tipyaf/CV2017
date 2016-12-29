@@ -1,23 +1,20 @@
 <div class="contacts-page">
-  <h3 class="header-views">{{data.name}}</h3>
+  <h3 class="header-views">{{dataPage.name}}</h3>
   <!--<i class="fa fa-hand-o-right fa-5x linkedin" aria-hidden="true"></i>-->
   
   <div class="left-side card" [@envelopeAnimation]="onEnvelope">
 
-    <h4 class="linkedin">Yannick Benchimol</h4>
+    <h4 class="linkedin">{{data.firstName}} {{data.name}}</h4>
     <div class="contacts-personnals">
-      <div><i class="material-icons">smartphone</i><span>07 60 64 93 53</span></div>
-      <div><i class="material-icons">contact_mail</i><span>ya.net@hotmail.fr</span></div>
+      <div><i class="material-icons">smartphone</i><span>{{data.phone}}</span></div>
+      <div><i class="material-icons">contact_mail</i><span>{{data.mail}}</span></div>
     </div>
     <div class="social-contacts">
       <p>
         retrouvons-nous sur :
       </p>
       <div class="social-icons flex-row space-around">
-        <a class="linkedin" href="https://www.linkedin.com/in/yannick-benchimol-4b9a8592" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" target="_blank"></i></a>
-        <a class="twitter" href="https://twitter.com/pitipiaf" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" ></i></a>
-        <a class="github" href="https://github.com/tipyaf" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-        </a>
+        <a *ngFor="let link of data.social" class="{{link.name}}" href="{{link.link}}" target="_blank"><i class="fa {{link.icon}} fa-2x" aria-hidden="true" target="_blank"></i></a>
       </div>
     </div>
   </div>

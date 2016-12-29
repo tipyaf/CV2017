@@ -13,7 +13,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import {Animations} from "./app.animations";
 import { AboutComponent } from './about/about.component';
 import {AppRouting} from "./app.routes";
-// import {AppDataService} from "./data.service";
+import {DataService} from "./data.service";
+// import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [
@@ -33,8 +34,9 @@ import {AppRouting} from "./app.routes";
     JsonpModule,
     AppRouting
   ],
-  providers: [Animations
-    // , AppDataService
+  providers: [
+    Animations,
+    DataService
   ],
   bootstrap: [AppComponent]
 })

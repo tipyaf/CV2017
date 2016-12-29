@@ -6,7 +6,7 @@ import 'rxjs/add/operator/catch';
 import {DataModel} from "./data.model";
 
 @Injectable()
-export class AppDataService {
+export class DataService {
   private dataUrl = 'assets/json/app.data.json';
   data: DataModel[] = [];
   constructor(private http: Http){}
@@ -23,6 +23,18 @@ export class AppDataService {
         })
 
     }
+    getDataPage(page: number): Observable<DataModel[]>{
+      return this.http.get(this.dataUrl)
+        .map(response => {
+          console.log(response.json().pages[page], 'json DataPage service');
+          return response.json().pages[page]
+        })
+        .catch(error =>{
+          console.warn(error, 'json DataPage service error');
+          return Observable.throw(error.json().pages[page])
+        })
+
+  }
 
 
 
