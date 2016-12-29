@@ -1,25 +1,31 @@
 {
   "firstName": "Yannick",
   "name": "Benchimol",
-  "address": "ya.net@hotmail.fr",
-  "social":{
-    "faSize": "fa-2x",
-    "twiter": {
+  "mail": "ya.net@hotmail.fr",
+  "phone": "07 60 64 93 53",
+  "social":[
+    {
+      "name": "twitter",
       "link": "https://twitter.com/pitipiaf",
       "icon": "fa fa-twitter-square",
+      "faSize": "fa-2x",
       "color": ""
     },
-    "linkedin": {
+    {
+      "name": "likedin",
       "link": "https://www.linkedin.com/in/yannick-benchimol-4b9a8592",
       "icon": "fa fa-linkedin-square",
+      "faSize": "fa-2x",
       "color": ""
     },
-    "github": {
-      "link": "https://www.linkedin.com/in/yannick-benchimol-4b9a8592",
-      "icon": "fa fa-linkedin-square",
+    {
+      "name": "github",
+      "link": "https://github.com/tipyaf",
+      "icon": "fa-github-square",
+      "faSize": "fa-2x",
       "color": ""
     }
-  },
+  ],
   "pages": [
     {
         "name": "Accueil",
@@ -30,7 +36,9 @@
     {
         "name": "À propos de moi",
         "target": "about",
-        "content": {}
+        "content": "bla bla"
+
+
     },
     {
       "name": "Compétences",
