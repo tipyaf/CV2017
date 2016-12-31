@@ -16,7 +16,7 @@
       <div class="second">
         <h5 class="flow-text">Compétences complémentaires:</h5>
         <ul class="flex-row space-around align-items-center">
-          <li *ngFor="let second of dataPage.secondaryTechnos">
+          <li *ngFor="let second of dataPage.secondaryTechnos" class="flex-col justify-center align-items-center">
             <img src="assets/img/{{second.src}}" alt="techno_secondary" width="32px">
             <p>{{second.name}}</p>
           </li>
