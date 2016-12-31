@@ -30,35 +30,115 @@
     {
         "name": "Accueil",
         "target": "accueil",
-        "content": {}
+        "content": []
 
     },
     {
-        "name": "À propos de moi",
+        "name": "En bref",
         "target": "about",
-        "content": "bla bla"
+        "technos": [
+          {
+            "name": "HTML5",
+            "src": "html.png"
+          },
+          {
+            "name": "CSS3",
+            "src": "css3.png"
+          },
+          {
+            "name": "Bootstrap",
+            "src": "bootstrap.png"
+          },
+          {
+            "name": "JavaScript",
+            "src": "JavaScript.png"
+          },
+          {
+            "name": "jQuery",
+            "src": "jquery_logo.png"
+          },
+          {
+            "name": "Angularjs",
+            "src": "AngularJS.png"
+          },
+          {
+            "name": "Angular 2",
+            "src": "angular2.png"
+          },
+          {
+            "name": "Cordova",
+            "src": "cordova.png"
+          },
+          {
+            "name": "Ionic",
+            "src": "ionic.png"
+          },
+          {
+            "name": "Leaflet",
+            "src": "leafletjs.png"
+          },
+          {
+            "name": "Gulp",
+            "src": "gulp.png"
+          },
+          {
+            "name": "Git",
+            "src": "git.png"
+          }
 
+        ],
+        "secondaryTechnos":[
+          {
+            "name": "Node",
+            "src": "node.png"
+          },
+          {
+            "name": "React",
+            "src": "react.jpeg"
+          },
+          {
+            "name": "PHP",
+            "src": "elephpant.png"
+          },
+          {
+            "name": "MySQL",
+            "src": "mysql.png"
+          },
+          {
+            "name": "ElasticSearch",
+            "src": "elasticsearch.png"
+          },
+          {
+            "name": "Photoshop",
+            "src": "photoshop.png"
+          }
 
-    },
-    {
-      "name": "Compétences",
-      "target": "skill",
-      "content": {}
+        ],
+        "content": [
+          {
+            "description": "bla bla bla",
+            "skills": [
+              "jgjgjjg", "jhhkhkhk"
+            ]
+          }
+
+        ]
+
     },
     {
       "name": "Parcours",
       "target": "cv",
-      "content": {}
+      "content": []
     },
     {
       "name": "Projets",
       "target": "projects",
-      "content": {}
+      "content": []
     },
     {
       "name": "Contacts",
       "target": "contacts",
-      "content": {}
+      "content": []
     }
   ]
 }

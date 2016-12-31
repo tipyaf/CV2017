@@ -14,7 +14,6 @@ import {Animations} from "./app.animations";
 import { AboutComponent } from './about/about.component';
 import {AppRouting} from "./app.routes";
 import {DataService} from "./data.service";
-// import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [

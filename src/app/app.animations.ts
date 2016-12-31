@@ -47,6 +47,18 @@ export class Animations {
       state('false', style({transform: 'translateX(-100%)'}) ),
       transition('1 => 0', animate('0.6s ease-in-out')),
       transition('0 => 1', animate('0.6s ease-in-out'))
+    ]),
+    trigger('comeToTop', [
+      state('true', style({transform: 'translateY(0)'}) ),
+      state('false', style({transform: 'translateY(-100%)'}) ),
+      transition('1 => 0', animate('0.6s ease-in-out')),
+      transition('0 => 1', animate('0.6s ease-in-out'))
+    ]),
+    trigger('comeToBottom', [
+      state('true', style({transform: 'translateY(0)'}) ),
+      state('false', style({transform: 'translateY(100%)'}) ),
+      transition('1 => 0', animate('0.6s ease-in-out')),
+      transition('0 => 1', animate('0.6s ease-in-out'))
     ])
 
   ];

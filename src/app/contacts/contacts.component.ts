@@ -2,7 +2,7 @@ import {Component, OnInit, Input} from '@angular/core';
 import {Animations} from "../app.animations";
 import {DataService} from "../data.service";
 
-import {DataModel} from "../data.model";
+import {DataModel, Page} from "../data.model";
 
 
 
@@ -16,6 +16,7 @@ import {DataModel} from "../data.model";
 })
 export class ContactsComponent implements OnInit {
   data: DataModel[] = [];
+  dataPage: Page[] = [];
   onEnvelope: boolean = false;
 
   constructor(
@@ -26,7 +27,7 @@ export class ContactsComponent implements OnInit {
   getDataPage(page: number){
     this._data.getDataPage(page)
       .subscribe(data =>{
-          this.data = data;
+          this.dataPage = data;
           console.log(data, 'get about data')
         }
 
@@ -47,7 +48,7 @@ export class ContactsComponent implements OnInit {
       () => this.onEnvelope = true, 500
     );
 
-    this.getDataPage(5);
+    this.getDataPage(4);
     this.getData();
   };
 

@@ -3,7 +3,7 @@ import {Http, Response} from "@angular/http";
 import {Observable} from "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-import {DataModel} from "./data.model";
+import {DataModel, Page, Content} from "./data.model";
 
 @Injectable()
 export class DataService {
@@ -23,7 +23,7 @@ export class DataService {
         })
 
     }
-    getDataPage(page: number): Observable<DataModel[]>{
+    getDataPage(page: number): Observable<Page[]>{
       return this.http.get(this.dataUrl)
         .map(response => {
           console.log(response.json().pages[page], 'json DataPage service');
@@ -34,8 +34,7 @@ export class DataService {
           return Observable.throw(error.json().pages[page])
         })
 
-  }
-
+    }
 
 
 }
