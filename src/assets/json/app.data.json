@@ -114,8 +114,29 @@
           }
 
         ],
-        "content": "Si je devais résumer en un mot mes centres d'intêret je dirais \"Musique!\" pour ne pas dire \"guitare, chant, mixage, mastering, synthé, Musique Assistée par Ordinateur\". Cependant, je dois avouer que j'arrive malgré tout à m'octroyer un peu de temps libre pour faire du sport, des randonnées ou des excursions."
+        "content": "Ma créativité, ma curiosité et ma soif de challenges sont mes atouts. D’un naturel fonceur, ma reconversion professionnelle est le reflet de ma détermination. Outre ma passion pour le web, je pratique aussi la musique à travers la guitare, le chant et la Musique Assisté par ordinateur.",
+        "experiences":[
+          {
+            "name": "UpTo",
+            "content": "Formation basée sur la pratique en mode projet",
+            "img": "up-to-numerique.gif",
+            "link": "http://upto-numerique.fr/"
+          },
+          {
+            "name": "Mobixio",
+            "content": "Solution mobile de transport en commun",
+            "img": "mobixio.png",
+            "link": "http://mobix.io/"
+          },
+          {
+            "name": "Capgemini",
+            "content": "SSII à Suresnes",
+            "img": "capgemini.png",
+            "link": "https://www.fr.capgemini.com/"
+          }
 
+
+        ]
     },
     {
       "name": "Parcours",

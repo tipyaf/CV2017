@@ -10,8 +10,11 @@
   font-size: small;
   text-align: center; }
 
-.about {
+.about, .technos-container, .experiences {
   padding: 50px; }
+
+.about p {
+  text-align: justify; }
 
 .technos {
   background: url("../../assets/img/bkg-skill.png") fixed center;
@@ -19,7 +22,6 @@
   background-size: cover; }
 
 .technos-container {
-  padding: 50px;
   background-color: rgba(0, 0, 0, 0.53);
   color: white; }
 
@@ -27,12 +29,54 @@
   margin-top: 0; }
 
 .technos-container ul {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 10px 60px; }
 
-.technos-container li {
+.first-technos li {
   width: 25%; }
 
 .second {
   padding: 20px; }
+
+.experiences ul {
+  flex-wrap: wrap;
+  min-height: 450px;
+  align-items: center; }
+
+.experiences li {
+  transition: all 0.2s; }
+
+.experiences li:hover {
+  transform: scale(1.2);
+  -webkit-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  transition: all 0.3s; }
+
+.experiences div {
+  padding: 10px;
+  min-width: 100%;
+  height: 100%; }
+
+.experience-item {
+  width: 150px;
+  min-height: 220px;
+  border: 7px solid #eba025;
+  border-radius: 10px; }
+
+.experience-item strong {
+  background-color: #eba025;
+  color: white;
+  width: 100%;
+  min-height: 15%;
+  border-radius: 10px 10px 0 0; }
+
+.experience-item img {
+  max-width: 80%; }
+
+.experiences li a {
+  width: 100%;
+  border-radius: 0 0 10px 10px; }
 
 /*# sourceMappingURL=about.component.css.map */
