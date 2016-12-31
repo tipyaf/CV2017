@@ -13,8 +13,15 @@
 .about {
   padding: 50px; }
 
+.technos {
+  background: url("../../assets/img/bkg-skill.png") fixed center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .technos-container {
-  padding: 50px; }
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.53);
+  color: white; }
 
 .technos-container h4 {
   margin-top: 0; }
