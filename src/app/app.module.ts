@@ -14,6 +14,7 @@ import {Animations} from "./app.animations";
 import { AboutComponent } from './about/about.component';
 import {AppRouting} from "./app.routes";
 import {DataService} from "./data.service";
+import {Ng2ScrollimateModule} from "ng2-scrollimate";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {DataService} from "./data.service";
     MaterializeModule,
     Angular2FontawesomeModule,
     JsonpModule,
+    Ng2ScrollimateModule,
     AppRouting
   ],
   providers: [

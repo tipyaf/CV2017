@@ -4,8 +4,7 @@
 body {
   margin: 0;
   background: url("assets/img/bkg-header.jpg") fixed center;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
 
 .flex-row {
   display: flex;

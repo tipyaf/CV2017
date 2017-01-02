@@ -5,7 +5,7 @@ body{
   margin: 0;
   background: url("assets/img/bkg-header.jpg") fixed center;
   background-size: cover;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .flex-row{
@@ -28,10 +28,7 @@ body{
 .align-items-center{
   align-items: center;
 }
-.view{
-  //width: 90%;
-  //height: 100vh;
-}
+
 .header-views{
   margin: 0;
   padding: 10px;

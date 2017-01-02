@@ -10,8 +10,11 @@
   font-size: small;
   text-align: center; }
 
-.about, .technos-container, .experiences {
+.technos-container, .experiences {
   padding: 50px; }
+
+.about {
+  padding: 150px; }
 
 .about p {
   text-align: justify; }
@@ -39,22 +42,6 @@
   flex-wrap: wrap;
   min-height: 450px;
   align-items: center; }
-
-.experiences li {
-  transition: all 0.2s; }
-
-.experiences li:hover {
-  transform: scale(1.2);
-  -webkit-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
-  z-index: 2;
-  transition: all 0.3s; }
-
-.experiences div {
-  padding: 10px;
-  min-width: 100%;
-  height: 100%; }
 
 .technos-container li {
   width: 100px;
@@ -109,5 +96,26 @@
 .experiences li a {
   width: 100%;
   border-radius: 0 0 10px 10px; }
+
+.experiences li {
+  transition: all 0.2s; }
+
+.experiences li:hover {
+  transform: scale(1.2);
+  -webkit-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 29px -19px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  transition: all 0.3s;
+  cursor: pointer; }
+
+.experiences div {
+  padding: 10px;
+  min-width: 100%;
+  height: 100%; }
+
+.second {
+  background-color: #eba025;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=about.component.css.map */
