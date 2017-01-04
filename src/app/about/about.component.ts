@@ -8,14 +8,13 @@ import { ScrollimateService } from "ng2-scrollimate";
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  host: {'[@routeAnimation]': ''},
+  host: {'[@comeToRightFast]': ''},
   animations: Animations.page,
   providers: [DataService, ScrollimateService],
 
 })
 export class AboutComponent implements OnInit {
-  public dataPage: Page[] = [];
-  public content: Content[] = [];
+  public dataPage = [];
   public anim: boolean = false;
   scrollimateOptions: any = {
     defaultStates: [
@@ -54,7 +53,7 @@ export class AboutComponent implements OnInit {
       states: [
         {
           method: "percentElement",
-          value: 40,
+          value: 100,
           state: "true",
 
         },
@@ -84,15 +83,9 @@ export class AboutComponent implements OnInit {
     private scrollimateService: ScrollimateService
   ) {
     scrollimateService.setDefaultStates(this.scrollimateOptions.defaultStates);
+    _data.getDataPage(1).subscribe(data => this.dataPage = data);
   }
 
-  getDataPage(page: number){
-    this._data.getDataPage(page)
-      .subscribe(data =>{
-          this.dataPage = data;
-        console.log(data, 'get about data')
-      });
-  }
   percentElement(event:any){
     this.scrollimateOptions.percentElement.currentValue=event.currentValue || this.scrollimateOptions.percentElement.currentValue;
   }
@@ -106,10 +99,7 @@ export class AboutComponent implements OnInit {
     this.scrollimateOptions.focusExp.currentValue=event.currentValue || this.scrollimateOptions.focusExp.currentValue;
   }
   ngOnInit() {
-    setTimeout(
-      () => this.anim = true, 500
-    );
-    this.getDataPage(1);
+    setTimeout(() => this.anim = true, 500);
   }
 
 }

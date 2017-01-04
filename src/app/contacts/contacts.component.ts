@@ -15,41 +15,23 @@ import {DataModel, Page} from "../data.model";
   providers:[DataService]
 })
 export class ContactsComponent implements OnInit {
-  data: DataModel[] = [];
-  dataPage: Page[] = [];
-  onEnvelope: boolean = false;
+  public data = [];
+  public dataPage = [];
+  public onEnvelope: boolean = false;
 
   constructor(
     private _data: DataService,
-  ) {}
-
-
-  getDataPage(page: number){
-    this._data.getDataPage(page)
-      .subscribe(data =>{
-          this.dataPage = data;
-          console.log(data, 'get about data')
-        }
-
-      );
+  ) {
+    _data.getData().subscribe(data => this.data = data);
+   _data.getDataPage(4).subscribe(data => this.dataPage = data);
   }
-
-  getData(){
-    this._data.getData()
-      .subscribe(data => {
-        this.data = data;
-        console.log(this.data, 'data ');
-      });
-
-  }
+  
   ngOnInit() {
 
     setTimeout(
       () => this.onEnvelope = true, 500
     );
 
-    this.getDataPage(4);
-    this.getData();
   };
 
 }

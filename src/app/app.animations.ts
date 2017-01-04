@@ -42,6 +42,12 @@ export class Animations {
       transition('1 => 0', animate('2s 3s ease-in-out')),
       transition('0 => 1', animate('2s 3s ease-in-out'))
     ]),
+    trigger('comeToRightFast', [
+      state('true', style({transform: 'translateX(0)'}) ),
+      state('false', style({transform: 'translateX(100%)'}) ),
+      transition('1 => 0', animate('2s ease-in-out')),
+      transition('0 => 1', animate('0.6s ease-in-out'))
+    ]),
     trigger('menuAnimation', [
       state('true', style({transform: 'translateX(0)'}) ),
       state('false', style({transform: 'translateX(-100%)'}) ),
@@ -72,7 +78,7 @@ export class Animations {
       transition('true => false', animate('0.6s ease-in-out')),
       transition('false => true', animate('0.6s ease-in-out'))
     ]),
-    trigger('OnscrollComeToBottom', [
+    trigger('OnScrollComeToBottom', [
       state('true', style({transform: 'translateY(0)'}) ),
       state('false', style({transform: 'translateY(100%)'}) ),
       transition('true => false', animate('0.6s ease-in-out')),
@@ -80,7 +86,7 @@ export class Animations {
     ]),
     trigger('OnScrollScale', [
       state('true', style({transform: 'scale(1)'}) ),
-      state('false', style({transform: 'scale(0.5)'}) ),
+      state('false', style({transform: 'scale(0.85)'}) ),
       transition('true => false', animate('0.6s ease-in-out')),
       transition('false => true', animate('0.6s ease-in-out'))
     ]),

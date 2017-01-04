@@ -26,10 +26,10 @@
 
     </div>
   </div>
-  <div class="experiences flex-col justify-center" [@OnScrollFadeIn]="scrollimateOptions.focusExp.currentState" [scrollimate]="scrollimateOptions.focusExp" (scrollimateAll)="focusExp($event)">
+  <div class="experiences flex-col justify-center">
     <h4 class="flow-text">Mes expériences</h4>
     <ul class="flex-row space-around">
-      <li *ngFor="let experience of dataPage.experiences" class="flex-col space-between align-items-center experience-item">
+      <li *ngFor="let experience of dataPage.experiences" class="flex-col space-between align-items-center experience-item" [@OnScrollFadeIn]="scrollimateOptions.focusExp.currentState" [scrollimate]="scrollimateOptions.focusExp" (scrollimateAll)="focusExp($event)">
         <strong class="flow-text">{{experience.name}}</strong>
         <div class="experience-content flex-col space-between align-items-center">
           <p>{{experience.content}}</p>
